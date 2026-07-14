@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+</head>
+<body>
+
+    <h1>Website Feedback Form</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+                minlength="2"
+                maxlength="50">
+            <br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required>
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                minlength="8">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Feedback Details</legend>
+
+            <label for="category">Feedback Category:</label><br>
+            <select id="category" name="category">
+                <option value="general" selected>General Feedback</option>
+                <option value="website">Website Design</option>
+                <option value="support">Customer Support</option>
+                <option value="product">Product Feedback</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+
+            <input type="radio" id="emailcontact" name="contactmethod" value="email" checked>
+            <label for="emailcontact">Email</label><br>
+
+            <input type="radio" id="phonecontact" name="contactmethod" value="phone">
+            <label for="phonecontact">Phone</label><br>
+
+            <input type="radio" id="textcontact" name="contactmethod" value="text">
+            <label for="textcontact">Text Message</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Features of Interest</legend>
+
+            <input type="checkbox" id="newsletter" name="features" value="newsletter" checked>
+            <label for="newsletter">Newsletter</label><br>
+
+            <input type="checkbox" id="mobileapp" name="features" value="mobileapp">
+            <label for="mobileapp">Mobile App</label><br>
+
+            <input type="checkbox" id="promotions" name="features" value="promotions">
+            <label for="promotions">Special Promotions</label><br>
+
+            <input type="checkbox" id="events" name="features" value="events">
+            <label for="events">Events & Updates</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Comments</legend>
+
+            <label for="comments">Comments:</label><br>
+            <textarea
+                id="comments"
+                name="comments"
+                rows="5"
+                cols="40"
+                placeholder="Enter your comments here..."
+                maxlength="500"
+                required></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Feedback">
+
+    </form>
+
+</body>
+</html>
